@@ -1,1 +1,171 @@
-<h1>Hello!</h1>
+<html>
+  <head>
+      <link rel = "stylesheet" type = "text/css" href = "bootstrap.min.css">
+      <link rel = "stylesheet" type = "text/css" href = "bootstrap-slider.css">
+      <link rel = "stylesheet" type = "text/css" href = "style.css">
+      <Title>The Inside Job</Title>
+  </head>
+
+  <body>
+    <!-- <div class = "bgimg">
+      <h1 class = "mainTitle">The Inside Job</h1>
+      <h3 class = "subtitle" >Just how much is the cost of beauty?</h3>
+    </div> -->
+
+    <div class= "title">
+
+      <img class = "titleImage" src="https://static.pexels.com/photos/28322/pexels-photo.jpg" alt="" />
+      
+      <h1 class = "mainTitle"><span>The Inside Job</span></h1>
+
+      <br><br>
+
+      <h2 class = "subtitle"><span>How much would you pay for (artificial) beauty?</span></h2>
+
+    </div>
+
+    <div class = "content partTwo">
+
+      <br>
+
+      <h4><strong>Here's a look at cosmetic plastic surgery trends around the world...</strong></h4>
+
+      <br>
+
+      <p>According to International Society of Aesthetics Plastic Surgery statistics, the US topped the chart in the total number of plastic surgery procedures performed in 2015. However, when the number of population is taken into account, South Korea had the highest number of plastic surgery procedures per capita.</p>
+
+      <p>The survey looks at the number of plastic surgeries performed in nine countries in 2015.</p>
+
+      <p> Click below to explore... </p>
+
+      <br>
+
+      <button class = "country btn btn-default" id = "All">Total</button> 
+      <button class = "country btn btn-default" id = "perCapita">Per Capita</button>
+
+      <br><br>
+
+      <div id="aligned">
+        <div class="chart_container">
+            <canvas class = "one" id="firstChart"></canvas>
+        </div>
+        <br><br>
+        <!-- <div class="chart_container">
+            <canvas class = "two" id="secondChart"></canvas>
+        </div> -->
+      </div>
+    </div>
+
+    <div class = "content partThree">
+
+      <h4><strong>A closer look at some of the most popular procedures</strong></h4>
+
+      <br>
+      
+      <p>Let's see how each of these procedures ranks in different countries.</p>
+
+      <button class = "procedure btn btn-default" id = "Breast Augmentation">Breast Augmentation</button>
+      <button class = "procedure btn btn-default" id = "Liposuction">Liposuction</button> 
+      <button class = "procedure btn btn-default" id = "Eyelid Surgery">Eyelid Surgery</button> 
+      <button class = "procedure btn btn-default" id = "Abdominoplasty">Abdominoplasty (Tummy Tuck)</button>
+      <button class = "procedure btn btn-default" id = "Rhinoplasty">Rhinoplasty</button> 
+      <button class = "procedure btn btn-default" id = "Fat Grafting-face">Fat Grafting-face</button>
+      <button class = "procedure btn btn-default" id = "Breast Lift">Breast Lift</button>
+      <button class = "procedure btn btn-default" id = "Breast Reduction">Breast Reduction</button>
+      <button class = "procedure btn btn-default" id = "Facelift">Facelift</button>
+      <button class = "procedure btn btn-default" id = "Buttock Augmentation">Buttock Augmentation</button>
+      <button class = "procedure btn btn-default" id = "Neck Lift">Neck Lift</button>
+      <button class = "procedure btn btn-default" id = "Ear Surgery">Ear Surgery</button>
+      <button class = "procedure btn btn-default" id = "Brow Lift">Brow Lift</button>         
+
+
+      <br><br>
+
+      <canvas class = "one" id = "fourthChart"></canvas>
+
+    </div>
+
+    <div class = "content partTwo">
+      <h3><strong>Plastic surgery in USA</strong></h3>
+
+      <br>
+
+      <p>These are the most popular procedures among Americans in 2015.</p>
+
+      <canvas class = "one" id = "thirdChart"></canvas>
+
+    </div>
+
+    <div class = "content partOne">
+      <h4><strong>Total spending</strong></h4>
+
+      <br>
+
+      <p>Americans spent more than USD 1 billion in 2015 on breast augmentation.</p>
+
+      <canvas class = "one" id = "fifthChart"></canvas>
+
+    </div>
+
+    <div class = "content partTwo">
+      <h4><strong>The price tag for beauty</strong></h4>
+      <p>Name your price to see what you can afford.</p>
+
+      <br><br>
+
+      <section>
+        <div class="filters filter-section">
+          <div class="row">
+            <div class="col-sm-4">
+              <span class="filter-label">Body Parts:</span>
+              <div class="btn-group" role="group" data-filter-group="color">
+                <span class="btn btn-sm btn-default btn-filter is-checked" data-filter="">Any</span>
+                <span class="btn btn-sm btn-default btn-filter" data-filter=".Breast">Breast</span>
+                <span class="btn btn-sm btn-default btn-filter" data-filter=".FaceandHead">Face and Head</span>
+                <span class="btn btn-sm btn-default btn-filter" data-filter=".Other">Other</span>
+              </div>
+            </div>
+            <!--<div class="col-sm-4">
+              <span class="filter-label">Sort By:</span>
+              <div class="btn-group" role="group" data-filter-group="size">
+                  <span class="btn btn-sm btn-default btn-filter is-checked" data-filter="">Any</span>
+                  <span class="btn btn-sm btn-default btn-filter" data-filter=".small">Price</span>
+                  <span class="btn btn-sm btn-default btn-filter" data-filter=".wide">Alphabet</span>
+                  <span class="btn btn-sm btn-default btn-filter" data-filter=".big">Body Part</span>
+              </div>
+            </div>-->
+          </div>
+        </div>
+        <div class="sliders row">
+          <div class="col-sm-4">
+              <div class="bootstrap-slider">
+                  <span class="filter-label">Price Range: <span class="filter-selection"></span></span>
+                  <b class="filter-min">0</b> <input id="filter-cost" type="text" class="bootstrap-slider" value="" data-filter-group="cost"> <b class="filter-max">8000</b>
+              </div>
+          </div>
+        </div>
+        <div class = "containerTwo">
+
+          <div class = "gridTwo">
+
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+<!--    <div class = "grid"></div> -->
+
+    <script src = "Chart.bundle.min.js"></script>
+    <script src = "jquery-3.1.1.min.js"></script>
+    <script src = "bootstrap.min.js"></script>
+    <script src = "bootstrap-slider.js"></script>
+    <script src = "isotope.pkgd.min.js"></script>
+    <script src = "data.js"></script>
+    <script src = "charts.js"></script>
+    <script src = "slider.js"></script>
+    <script src = "script.js"></script>
+  </body>
+
+
+</html>
