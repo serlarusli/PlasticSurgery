@@ -4,7 +4,7 @@
 
 .mainTitle { 
    position: absolute; 
-   top: 400px; 
+   top: 60%; 
    left: 0; 
    width: 100%; 
 }
@@ -20,7 +20,7 @@
 
 .subtitle { 
    position: absolute; 
-   top: 600px; 
+   top: 90%; 
    right: 0; 
    width: 100%; 
 }
@@ -41,6 +41,11 @@
 
 .partTwo {
   background-color: #F8F9F9;
+}
+
+.sources {
+  text-align: left;
+  font-size: 10px;
 }
 
 * {
@@ -74,14 +79,6 @@ body {
     height: auto !important;
 }
 
-/*.mainTitle {
-    text-align: center;
-}
-
-.subtitle {
-    text-align: center;
-} */
-
 .sliders { 
     padding: 15px 0 30px 0; 
 }
@@ -112,17 +109,6 @@ body {
   float: left;
   text-align: center;
 }
-.item.round { border-radius: 35px; }
-.item.big.round { border-radius: 75px; }
-
-.item.red { background: #b0221b; }
-.item.blue { background: #2175b0; }
-.item.yellow { background: #e8ce3c; }
-
-.item.wide,
-.item.big { width: 150px; }
-.item.tall,
-.item.big { height: 150px; }
 
 .item .content {
   color: #fff;
@@ -142,8 +128,12 @@ div.gridTwo-item {
   color: #fff;
 }
 
-h3 {
+div.gridTwo-item h3 {
   font-size: 20px;
+}
+
+div.gridTwo-item p {
+  font-size: 25px;
 }
 
 .Breast {

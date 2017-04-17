@@ -16,7 +16,13 @@ $(document).ready( function() {
       var cost = $this.attr('data-cost');
       var isInCostRange = (rangeFilters['cost'].min <= cost && rangeFilters['cost'].max >= cost);
       return $this.is( buttonFilter ) && (isInCostRange);
-    }
+    },
+
+    //getSortData: {
+      //cost: '.surgeryCost', // text from querySelector
+      //procedureName: 'procedureName', // value of attribute
+      //}
+    //}
   });
 
   var $costSlider = $('#filter-cost').slider({ tooltip_split: true, min: 0,  max: 8000, range: true, value: [0, 8000] });

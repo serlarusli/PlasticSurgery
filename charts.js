@@ -1,5 +1,3 @@
-
-
 //Showing Overview Data
 var ctx1 = document.getElementById("firstChart");
 
@@ -113,11 +111,15 @@ function displaySummary() {
 	        		stacked: true,
 	        		ticks: {
 	        			beginAtZero:true
-	        		}
+	        		},
+	        		scaleLabel: {
+	            		display: true,
+	            		labelString: 'Number of procedures performed'
+	            	}
 	        	}],
 	            yAxes: [{
-	            	stacked: true,
-	            }]
+	            	stacked: true
+	            	}]
 	        }
 	        }
 	    })
@@ -139,9 +141,9 @@ for (var key in sortPCData) {
 	idx++;
 };
 
-console.log(breastPCData);
-console.log(facePCData);
-console.log(othersPCData);
+//console.log(breastPCData);
+//console.log(facePCData);
+//console.log(othersPCData);
 
 function displaySummaryPC() {
 	var myGraph = new Chart(ctx1, {
@@ -239,7 +241,11 @@ function displaySummaryPC() {
 	        		stacked: true,
 	        		ticks: {
 	        			beginAtZero:true
-	        		}
+	        		},
+	        		scaleLabel: {
+	            		display: true,
+	            		labelString: 'Number of procedures performed per capita'
+	            	}
 	        	}],
 	            yAxes: [{
 	            	stacked: true,
@@ -309,7 +315,11 @@ function displayProcedure(id) {
 	        		stacked: true,	
 	        		ticks: {
 	        			beginAtZero:true
-	        		}
+	        		},
+	        		scaleLabel: {
+	            		display: true,
+	            		labelString: 'Number of procedures performed'
+	            	}
 	        	}],
 	            yAxes: [{
 	            	stacked: true,
@@ -412,7 +422,11 @@ function displayUSAGraph() {
 	        		stacked: true,
 	        		ticks: {
 	        			beginAtZero:true
-	        		}
+	        		},
+	        		scaleLabel: {
+	            		display: true,
+	            		labelString: 'Number of procedures performed'
+	            	}
 	        	}],
 	            yAxes: [{
 	            	stacked: true,
@@ -474,9 +488,13 @@ function displayUSAExp() {
 					'rgba(255, 255, 255, 0.5)',
 					'rgba(255, 255, 255, 0.5)',
 					'rgba(255, 255, 255, 0.5)',
+					'rgba(255, 255, 255, 0.5)',
+					'rgba(255, 255, 255, 0.5)',
 					'rgba(255, 255, 255, 0.5)'
 				],
 				borderColor: [
+					'rgba(77, 166, 255, 1)',
+					'rgba(77, 166, 255, 1)',
 					'rgba(77, 166, 255, 1)',
 					'rgba(77, 166, 255, 1)',
 					'rgba(77, 166, 255, 1)',
@@ -517,7 +535,11 @@ function displayUSAExp() {
 	        		stacked: true,
 	        		ticks: {
 	        			beginAtZero:true
-	        		}
+	        		},
+	        		scaleLabel: {
+	            		display: true,
+	            		labelString: 'Total spending (USD)'
+	            	}
 	        	}],
 	            yAxes: [{
 	            	stacked: true,

@@ -7,15 +7,9 @@
   </head>
 
   <body>
-    <!-- <div class = "bgimg">
-      <h1 class = "mainTitle">The Inside Job</h1>
-      <h3 class = "subtitle" >Just how much is the cost of beauty?</h3>
-    </div> -->
 
     <div class= "title">
-
       <img class = "titleImage" src="https://static.pexels.com/photos/28322/pexels-photo.jpg" alt="" />
-      
       <h1 class = "mainTitle"><span>The Inside Job</span></h1>
 
       <br><br>
@@ -32,11 +26,11 @@
 
       <br>
 
-      <p>According to International Society of Aesthetics Plastic Surgery statistics, the US topped the chart in the total number of plastic surgery procedures performed in 2015. However, when the number of population is taken into account, South Korea had the highest number of plastic surgery procedures per capita.</p>
+      <p>According to International Society of Aesthetics Plastic Surgery statistics, the US topped the chart in the total number of plastic surgery with more than 1.4 million procedures performed in 2015. However, when the number of population is taken into account, South Korea had the highest number of plastic surgery procedures per capita (close to 0.009 per person).</p>
 
       <p>The survey looks at the number of plastic surgeries performed in nine countries in 2015.</p>
 
-      <p> Click below to explore... </p>
+      <p> Click the buttons below to explore. </p>
 
       <br>
 
@@ -47,12 +41,12 @@
 
       <div id="aligned">
         <div class="chart_container">
-            <canvas class = "one" id="firstChart"></canvas>
+          <canvas class = "one" id="firstChart"></canvas>
         </div>
-        <br><br>
-        <!-- <div class="chart_container">
-            <canvas class = "two" id="secondChart"></canvas>
-        </div> -->
+        <br>
+        <div class = "sources">
+          <p>Source: International Society of Aesthetics Plastic Surgery</p>
+        </div>
       </div>
     </div>
 
@@ -62,7 +56,7 @@
 
       <br>
       
-      <p>Let's see how each of these procedures ranks in different countries.</p>
+      <p>Let's see how each of these procedures ranks in different countries. Click on each procedure name to find out.</p>
 
       <button class = "procedure btn btn-default" id = "Breast Augmentation">Breast Augmentation</button>
       <button class = "procedure btn btn-default" id = "Liposuction">Liposuction</button> 
@@ -83,6 +77,11 @@
 
       <canvas class = "one" id = "fourthChart"></canvas>
 
+      <br>
+
+      <div class = "sources">
+        <p>Source: International Society of Aesthetics Plastic Surgery</p>
+      </div>
     </div>
 
     <div class = "content partTwo">
@@ -90,9 +89,15 @@
 
       <br>
 
-      <p>These are the most popular procedures among Americans in 2015.</p>
+      <p>Breast augmentation was the most popular plastic surgery procedure in the US, with more than 300,000 procedures performed in 2015. Liposuction comes next with close to 250,000 procedures performed.</p>
 
       <canvas class = "one" id = "thirdChart"></canvas>
+
+      <br>
+
+      <div class = "sources">
+        <p>Source: International Society of Aesthetics Plastic Surgery</p>
+      </div>
 
     </div>
 
@@ -101,17 +106,28 @@
 
       <br>
 
-      <p>Americans spent more than USD 1 billion in 2015 on breast augmentation.</p>
+      <p>Americans spent more than USD 1 billion in 2015 on breast augmentation and rhinoplasty (nose job) each.</p>
+
+      <p>The total spending on cosmetic plastic surgery amounted to almost USD 7.5 billion, or around the size of the GDP of Kyrgyzstan in 2015.</p>
 
       <canvas class = "one" id = "fifthChart"></canvas>
+
+      <br>
+
+      <div class = "sources">
+        <p>Source: American Society of Plastic Surgeons</p>
+      </div>
 
     </div>
 
     <div class = "content partTwo">
       <h4><strong>The price tag for beauty</strong></h4>
-      <p>Name your price to see what you can afford.</p>
+      
+      <br>
 
-      <br><br>
+      <p>How much does each procedure cost in the US? Use the price slider to find out what you can afford.</p>
+
+      <br>
 
       <section>
         <div class="filters filter-section">
@@ -125,13 +141,13 @@
                 <span class="btn btn-sm btn-default btn-filter" data-filter=".Other">Other</span>
               </div>
             </div>
-            <!--<div class="col-sm-4">
+            <!--HTML for sorting
+              <div class="col-sm-4">
               <span class="filter-label">Sort By:</span>
               <div class="btn-group" role="group" data-filter-group="size">
-                  <span class="btn btn-sm btn-default btn-filter is-checked" data-filter="">Any</span>
-                  <span class="btn btn-sm btn-default btn-filter" data-filter=".small">Price</span>
-                  <span class="btn btn-sm btn-default btn-filter" data-filter=".wide">Alphabet</span>
-                  <span class="btn btn-sm btn-default btn-filter" data-filter=".big">Body Part</span>
+                  <span class="btn btn-sm btn-default btn-filter is-checked" data-sort="">Any</span>
+                  <span class="btn btn-sm btn-default btn-filter" data-sort=".surgeryCost">Cost</span>
+                  <span class="btn btn-sm btn-default btn-filter" data-sort=".procedureName">Procedure Name</span>
               </div>
             </div>-->
           </div>
@@ -151,10 +167,14 @@
           </div>
 
         </div>
+        
+        <br>
+
+        <div class = "sources">
+          <p>Source: American Society of Plastic Surgeons</p>
+        </div>
       </section>
     </div>
-
-<!--    <div class = "grid"></div> -->
 
     <script src = "Chart.bundle.min.js"></script>
     <script src = "jquery-3.1.1.min.js"></script>
